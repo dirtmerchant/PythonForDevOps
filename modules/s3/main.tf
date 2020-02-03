@@ -1,7 +1,7 @@
 resource "aws_s3_bucket" "www" {
- bucket = "www.${var.domain_name}" 
- acl = "public-read"
- policy = <<POLICY
+  bucket = "www.${var.domain_name}"
+  acl    = "public-read"
+  policy = <<POLICY
 {
     "Version":"2012-10-17"
     "Statement":[
@@ -16,7 +16,7 @@ resource "aws_s3_bucket" "www" {
 }
 POLICY
 
-    website {
-        index_document = "index.html"
-    }
+  website {
+    index_document = "index.html"
+  }
 }
