@@ -3,5 +3,5 @@ variable "aws_region" {
 }
 
 variable "domain_name" {
-    default = "bertbullough.dev"
+    default = "www.bertbullough.dev"
 }
